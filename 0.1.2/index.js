@@ -1,5 +1,3 @@
-// console.log('Dyogo');
-
 function Desconto(valorCompra = 100.00 , cartao , convenio ) {
   const DescontoCC = 0;
   const DescontoC = 0;
