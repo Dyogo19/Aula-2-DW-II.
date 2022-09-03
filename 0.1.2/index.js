@@ -6,18 +6,18 @@ function Desconto(valorCompra = 100.00 , cartao , convenio ) {
   if (cartao && convenio == true) {
     const DescontoCC = valorCompra * 0.15;
     valorCompraTotal = valorCompra - DescontoCC;
-    console.log(valorCompraTotal);
+    return valorCompraTotal;
   } else if (cartao == true && convenio == false || cartao == false && convenio == true) {
     const DescontoC = valorCompra * 0.10;
     const valorCompraTotal = valorCompra - DescontoC;
-    console.log(valorCompraTotal);
+    return valorCompraTotal;
   } else {
     semConvenioCartao 
-    console.log(valorCompra);
+    return valorCompra;
   }
 }
 
-Desconto (100, true, true);
-Desconto (100, false, false);
-Desconto (100, true, false);
-Desconto (100, false, true);
+console.log(Desconto (100, true, true));
+console.log(Desconto (100, false, false));
+console.log(Desconto (100, true, false));
+console.log(Desconto (100, false, true));
